@@ -24,10 +24,11 @@
         android:ems="10"
         android:hint="@string/nome_usuario"
         android:inputType="text"
-        android:maxLength="10"
+        android:maxLength="25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_titulo" />
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
+        tools:ignore="Autofill" />
 
     <Button
         android:id="@+id/btn_confirmar"
@@ -46,8 +47,10 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_confirmar"
+        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/repository_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
